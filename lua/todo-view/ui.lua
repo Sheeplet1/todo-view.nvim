@@ -1,8 +1,8 @@
 local M = {}
 
 function M.open_float()
-	local config = require("todo.config")
-	local utils = require("todo.utils")
+	local config = require("todo-view.config")
+	local utils = require("todo-view.utils")
 
 	local todo_file_path = utils.find_todo_file(vim.fn.getcwd())
 

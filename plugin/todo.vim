@@ -1,1 +1,1 @@
-lua require("todo").setup()
+command! TodoView lua require("todo-view").toggle_float()
