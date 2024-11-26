@@ -26,6 +26,12 @@ Install the plugin with your plugin manager.
 }
 ```
 
+Then add to keymaps:
+
+```lua
+vim.keymap.set("n", "<leader>td", "<cmd>TodoView<CR>", { desc = "Toggle TodoView" })
+```
+
 ## Configuration
 
 ```lua
