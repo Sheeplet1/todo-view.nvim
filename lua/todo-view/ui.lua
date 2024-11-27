@@ -16,6 +16,7 @@ function M.open_float()
 
 		local bufnr = vim.fn.bufadd(todo_file_path)
 		vim.fn.bufload(bufnr)
+		vim.bo[bufnr].bufhidden = "wipe"
 
 		local original_winid = vim.api.nvim_get_current_win()
 		local winid = vim.api.nvim_open_win(bufnr, true, {

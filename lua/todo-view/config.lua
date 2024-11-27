@@ -4,7 +4,8 @@ local M = {}
 --- @class TodoOptions
 local defaults = function()
 	local curr_win = vim.api.nvim_get_current_win()
-	local width = math.floor(vim.api.nvim_win_get_width(curr_win) * 0.9)
+	-- local width = math.floor(vim.api.nvim_win_get_width(curr_win) * 0.9)
+	local width = 80
 	local height = math.floor(vim.api.nvim_win_get_height(curr_win) * 0.8)
 	local gwidth = vim.api.nvim_list_uis()[1].width
 	local gheight = vim.api.nvim_list_uis()[1].height
